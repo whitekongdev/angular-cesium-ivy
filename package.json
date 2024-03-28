@@ -1,6 +1,6 @@
 {
   "name": "angular-cesium-ivy",
-  "version": "0.0.77",
+  "version": "0.0.78",
   "license": "MIT",
   "description": "Angular library for working with Angular-Cesium.",
   "repository": "https://github.com/whitekongdev/angular-cesium-ivy",

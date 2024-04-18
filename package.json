@@ -1,6 +1,6 @@
 {
   "name": "angular-cesium-ivy",
-  "version": "0.0.82",
+  "version": "0.0.85",
   "license": "MIT",
   "description": "Angular library for working with Angular-Cesium.",
   "repository": "https://github.com/whitekongdev/angular-cesium-ivy",
@@ -16,7 +16,7 @@
     "demo:build": "ng build angular-cesium-demo --configuration production",
     "landing-page:deploy": "ng build landing-page --configuration production; cp projects/landing-page/now.json dist/landing-page; cd dist/landing-page; now --configuration production",
     "landing-page": "ng serve landing-page --host 0.0.0.0 --disableHostCheck",
-    "lib:build": "ng build angular-cesium --configuration production; npm run copy:extra-files; npm run schemnantics:build",
+    "lib:build": "ng build angular-cesium --configuration production; npm run copy:extra-files; npm run schemnantics:build; node ./remove-prepublish-script.js",
     "lib:start": "ng build angular-cesium --watch",
     "lib:publish": "cd dist/angular-cesium; npm publish",
     "test": "ng test angular-cesium",
